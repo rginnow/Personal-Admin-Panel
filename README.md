@@ -2,6 +2,7 @@
 This project was created as a challenge to myself to code and create a basic system for me to use myself after finding this [Dribbble](https://dribbble.com/shots/3166166-Personal-Admin-Panel) shot that inspired me.
 
 ## Installation
+_**Note:** This installation is a full Laravel application, requiring a running LAMP stack._
 - Clone this repo to your machine
 - Run `composer install` to install the required packages
 - Run `npm install` to install the required dependencies
