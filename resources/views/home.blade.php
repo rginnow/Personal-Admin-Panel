@@ -72,8 +72,8 @@
                                     <input type="checkbox" value="">
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Some cool todo here</div>
-                                        <div class="todo-subtitle">Extra info</div>
+                                        <div class="todo-title">Call lawyer about submission</div>
+                                        <div class="todo-subtitle">Get New Zealand Visa</div>
                                     </div>
                                 </label>
                             </div>
@@ -85,8 +85,8 @@
                                     <input type="checkbox" value="">
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Some cool todo here</div>
-                                        <div class="todo-subtitle">Extra info</div>
+                                        <div class="todo-title">Send Resume to Spark Ventures</div>
+                                        <div class="todo-subtitle">Find fulltime job</div>
                                     </div>
                                 </label>
                             </div>
@@ -98,8 +98,8 @@
                                     <input type="checkbox" value="">
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Some cool todo here</div>
-                                        <div class="todo-subtitle">Extra info</div>
+                                        <div class="todo-title">Talk to Dealership</div>
+                                        <div class="todo-subtitle">Motorcycle</div>
                                     </div>
                                 </label>
                             </div>
@@ -111,8 +111,8 @@
                                     <input type="checkbox" value="" checked>
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Some cool todo here</div>
-                                        <div class="todo-subtitle">Extra info</div>
+                                        <div class="todo-title">Find cheap tickets in July</div>
+                                        <div class="todo-subtitle">Trip to Holland</div>
                                     </div>
                                 </label>
                             </div>
