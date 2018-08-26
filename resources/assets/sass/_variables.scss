@@ -24,13 +24,19 @@ $cyan: #6cb2eb;
 $white: #fff;
 $black: #000;
 
-$border-blue: #3ca4db;
+$success: #65c920;
+$bg-success: #e1f5d3;
+
+// $info: #b1dbf1;
+$bg-info: #e7f4fa;
+
+$link: #3ca4db;
+$icon-bg: $bg-info;
+
+$border-blue: $link;
 $border-gray: #eff1f3;
 
 $text-gray: #8295a7;
 $text-dark: #284564;
-
-$link: #3ca4db;
-$icon-bg: #e9f6fd;
 
 $badge-bg: #a7b5c3;

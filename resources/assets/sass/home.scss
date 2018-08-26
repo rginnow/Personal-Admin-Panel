@@ -50,7 +50,14 @@
 .todo {
     display: inline-block;
     width: 49%;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
+    .attachment {
+        float: right;
+        margin-right: 2rem;
+        img {
+            border-radius: 50%;
+        }
+    }
 }
 
 // Custom Checkbox
@@ -72,7 +79,7 @@
             }
 
             &:checked + .cr {
-                background-color: lighten($green, 35%);
+                background-color: $bg-success;
                 border: none;
 
                 &> .cr-icon {
@@ -114,10 +121,140 @@
 
     .todo-text {
         display: inline-block;
-        .todo-title {
-            font-weight: bold;
-        }
         .todo-subtitle {
+            font-size: 0.9em;
+            color: $text-gray;
+        }
+    }
+}
+
+
+// Goals
+.goals {
+    list-style: none;
+    counter-reset: goals-counter;
+    .goal {
+        counter-increment: goals-counter;
+        position: relative;
+        padding-left: 3em;
+        margin: 0 0 1em 0;
+        &:before {
+            content: counter(goals-counter);
+            position: absolute;
+            left: 0;
+            top: calc(50%-2em);
+            font-size: 2em;
+            font-weight: 200;
+            color: lighten($text-gray, 25%);
+        }
+        .goal-text {
+            float: left;
+            .goal-subtitle {
+                font-size: 0.9em;
+                color: $text-gray;
+            }
+        }
+        .goal-progress {
+            position: relative;
+            margin-top: 10px;
+            float: right;
+            text-align:center;
+            overflow: hidden;
+            font-size: 0.75rem;
+            border-radius: 0.25rem;
+            padding: 0.1rem 0.5rem;
+            &.progress-info {
+                border: 1px solid $border-blue;
+                .goal-bg {
+                    background-color: $bg-info;
+                }
+            }
+            &.progress-success {
+                border: 1px solid $success;
+                .goal-bg {
+                    background-color: $bg-success !important;
+                }
+            }
+            .goal-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom:0;
+                z-index: 1;
+            }
+            .progress-text {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// Finance Expenses
+.expenses {
+    list-style: none;
+    .expense {
+        position: relative;
+        padding-left: 3em;
+        margin: 0 0 1em 0;
+        &:before {
+            content: "\F155";
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            left: 0;
+            font-size: 2em;
+            font-weight: 200;
+            color: lighten($text-gray, 25%);
+        }
+        .expense-text {
+            float: left;
+            .expense-subtitle {
+                font-size: 0.9em;
+                color: $text-gray;
+            }
+        }
+        .expense-progress {
+            position: relative;
+            margin-top: 10px;
+            float: right;
+            text-align:center;
+            overflow: hidden;
+            font-size: 0.75rem;
+            border-radius: 0.25rem;
+            padding: 0.1rem 0.5rem;
+            &.progress-danger {
+                border: 1px solid $red;
+            }
+            .expense-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom:0;
+                z-index: 1;
+            }
+            .progress-text {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// Contacts
+.contact {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 1rem;
+    .contact-image {
+        float: left;
+        margin-right: 1rem;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .contact-text {
+        float: left;
+        .contact-subtitle {
             font-size: 0.9em;
             color: $text-gray;
         }

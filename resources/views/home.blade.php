@@ -72,10 +72,13 @@
                                     <input type="checkbox" value="">
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Call lawyer about submission</div>
+                                        <div class="todo-title font-weight-bold">Call lawyer about submission</div>
                                         <div class="todo-subtitle">Get New Zealand Visa</div>
                                     </div>
                                 </label>
+                                <div class="attachment">
+                                    <img src="https://api.adorable.io/avatars/40/tom.png" alt="Tom">
+                                </div>
                             </div>
                         </div>
 
@@ -85,7 +88,7 @@
                                     <input type="checkbox" value="">
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Send Resume to Spark Ventures</div>
+                                        <div class="todo-title font-weight-bold">Send Resume to Spark Ventures</div>
                                         <div class="todo-subtitle">Find fulltime job</div>
                                     </div>
                                 </label>
@@ -98,7 +101,7 @@
                                     <input type="checkbox" value="">
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Talk to Dealership</div>
+                                        <div class="todo-title font-weight-bold">Talk to Dealership</div>
                                         <div class="todo-subtitle">Motorcycle</div>
                                     </div>
                                 </label>
@@ -111,7 +114,7 @@
                                     <input type="checkbox" value="" checked>
                                     <span class="cr text-success"><i class="cr-icon fa fa-check"></i></span>
                                     <div class="todo-text">
-                                        <div class="todo-title">Find cheap tickets in July</div>
+                                        <div class="todo-title font-weight-bold">Find cheap tickets in July</div>
                                         <div class="todo-subtitle">Trip to Holland</div>
                                     </div>
                                 </label>
@@ -150,7 +153,49 @@
                     </div>
 
                     <div class="card-body">
-                        You are logged in!
+                        <ol class="goals">
+                            <li class="goal clearfix">
+                                <div class="goal-text">
+                                    <div class="goal-title font-weight-bold">Find cheap tickets in July</div>
+                                    <div class="goal-subtitle">Trip to Holland</div>
+                                </div>
+                                <div class="goal-progress progress-info">
+                                    <span class="progress-text text-info font-weight-bold" >2 / 8</span>
+                                </div>
+                            </li>
+
+                            <li class="goal clearfix">
+                                <div class="goal-text">
+                                    <div class="goal-title font-weight-bold">Motorcycle</div>
+                                    <div class="goal-subtitle">Save $5,000</div>
+                                </div>
+                                <div class="goal-progress progress-info">
+                                    <span class="goal-bg" role="progressbar" style="width:45%"></span>
+                                    <span class="progress-text text-info font-weight-bold" >$1,500</span>
+                                </div>
+                            </li>
+
+                            <li class="goal clearfix">
+                                <div class="goal-text">
+                                    <div class="goal-title font-weight-bold">Trip to Holland</div>
+                                    <div class="goal-subtitle">Save $10,000</div>
+                                </div>
+                                <div class="goal-progress progress-success">
+                                    <span class="goal-bg" role="progressbar" style="width:45%"></span>
+                                    <span class="progress-text text-success font-weight-bold" >$1,500</span>
+                                </div>
+                            </li>
+
+                            <li class="goal clearfix">
+                                <div class="goal-text">
+                                    <div class="goal-title font-weight-bold">Find Fulltime Job</div>
+                                    <div class="goal-subtitle">Almost Done</div>
+                                </div>
+                                <div class="goal-progress progress-success">
+                                    <span class="progress-text text-success font-weight-bold" >6 / 9</span>
+                                </div>
+                            </li>
+                        </ol>
                     </div>
 
                     <div class="card-footer">
@@ -159,7 +204,7 @@
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-plus fa-stack-1x"></i>
                             </span>
-                            Add New Todo
+                            Add New Goal
                         </a>
                     </div>
                 </div>
@@ -182,7 +227,49 @@
                     </div>
 
                     <div class="card-body">
-                        You are logged in!
+                        <ul class="expenses">
+                            <li class="expense clearfix">
+                                <div class="expense-text">
+                                    <div class="expense-title font-weight-bold">Find cheap tickets in July</div>
+                                    <div class="expense-subtitle">Trip to Holland</div>
+                                </div>
+                                <div class="expense-progress progress-danger">
+                                    <span class="progress-text text-danger font-weight-bold" >29.15</span>
+                                </div>
+                            </li>
+
+                            <li class="expense clearfix">
+                                <div class="expense-text">
+                                    <div class="expense-title font-weight-bold">Motorcycle</div>
+                                    <div class="expense-subtitle">Save $5,000</div>
+                                </div>
+                                <div class="expense-progress progress-danger">
+                                    <span class="expense-bg" role="progressbar" style="width:45%"></span>
+                                    <span class="progress-text text-danger font-weight-bold" >120.99</span>
+                                </div>
+                            </li>
+
+                            <li class="expense clearfix">
+                                <div class="expense-text">
+                                    <div class="expense-title font-weight-bold">Trip to Holland</div>
+                                    <div class="expense-subtitle">Save $10,000</div>
+                                </div>
+                                <div class="expense-progress progress-danger">
+                                    <span class="expense-bg" role="progressbar" style="width:45%"></span>
+                                    <span class="progress-text text-danger font-weight-bold" >15.99</span>
+                                </div>
+                            </li>
+
+                            <li class="expense clearfix">
+                                <div class="expense-text">
+                                    <div class="expense-title font-weight-bold">Find Fulltime Job</div>
+                                    <div class="expense-subtitle">Almost Done</div>
+                                </div>
+                                <div class="expense-progress progress-danger">
+                                    <span class="progress-text text-danger font-weight-bold" >12.72</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="card-footer">
@@ -213,7 +300,45 @@
                     </div>
 
                     <div class="card-body">
-                        You are logged in!
+                        <div class="contact">
+                            <div class="contact-image">
+                                <img src="https://api.adorable.io/avatars/40/tom.png" alt="Tom">
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-title font-weight-bold">Tom Sanders</div>
+                                <div class="contact-subtitle">Friend</div>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact-image">
+                                <img src="https://api.adorable.io/avatars/40/jerry.png" alt="Jerry">
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-title font-weight-bold">Spongebob Squarepants</div>
+                                <div class="contact-subtitle">Cartoon Character</div>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact-image">
+                                <img src="https://api.adorable.io/avatars/40/bob.png" alt="Bob">
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-title font-weight-bold">Bob Saget</div>
+                                <div class="contact-subtitle">Celebrity</div>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact-image">
+                                <img src="https://api.adorable.io/avatars/40/sam.png" alt="Sam">
+                            </div>
+                            <div class="contact-text">
+                                <div class="contact-title font-weight-bold">Jerry Mouse</div>
+                                <div class="contact-subtitle">Cartoon Character</div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="card-footer">
@@ -239,15 +364,15 @@
         </a>
 
         <div class="messages bottom">
-            <div class="contact">
+            <div class="quick-contact">
                 <img src="https://api.adorable.io/avatars/50/tom.png" alt="Tom">
                 <span class="badge">1</span>
             </div>
-            <div class="contact">
+            <div class="quick-contact">
                 <img src="https://api.adorable.io/avatars/50/jerry.png" alt="Jerry">
                 <span class="badge">1</span>
             </div>
-            <div class="contact">
+            <div class="quick-contact">
                 <img src="https://api.adorable.io/avatars/50/bob.png" alt="Bob">
                 <span class="badge">1</span>
             </div>
