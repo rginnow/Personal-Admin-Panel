@@ -8,7 +8,104 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+html {
+    background: url('https://source.unsplash.com/weekly?mountains') no-repeat center center fixed;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom,$body-bg, $body-bg);
+        opacity: .9;
+    }
+}
+
+body {
+    background-color: transparent;
+    color: $text-dark;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link {
+    color: $link;
+    text-decoration: none;
+}
+
+#app {
+    position: relative;
+    z-index: 1;
+}
+
+
+// Navigation
+.left-nav, .right-nav {
+    position: relative;
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right:0;
+        margin: 0 auto;
+    }
+}
+
+.left-nav {
+    text-align: center;
+    .nav-list {
+        list-style: none;
+        .nav-item {
+            margin: 2rem 0;
+            .nav-link {
+                color: $white;
+                opacity: 0.6;
+                &:hover, &.current {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.right-nav {
+    text-align: center;
+    margin-top: 2rem;
+
+    .messages {
+        margin-bottom: 2rem;
+        .contact {
+            margin: 1.5rem 0 0;
+            position: relative;
+
+            .badge {
+                position: absolute;
+                top: 0;
+                right: 1rem;
+                font-size: 1em;
+                padding: 0.25em 0.5em 0.3em;
+                border-radius: 50%;
+                background-color: $badge-bg;
+                color: $white;
+            }
+
+            &:first-of-type .badge {
+                background-color: $primary;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
 }

@@ -1,0 +1,125 @@
+@import 'variables';
+
+.row {
+    margin: 1.5rem 0;
+}
+
+.card {
+    border: none;
+}
+
+.card-tabs {
+    margin: 0 1rem;
+    border-bottom: 1px solid $border-gray;
+
+    .card-tab {
+        display: inline-block;
+        margin-right: 1rem;
+
+        a {
+            display:block;
+            padding: 1rem 0;
+            text-decoration: none;
+            color: $text-gray;
+            &:hover {
+                color: $text-dark;
+            }
+        }
+
+        &.selected {
+            border-bottom: 3px solid $border-blue;
+            a {
+                color: $text-dark;
+            }
+        }
+    }
+}
+
+.card-footer {
+    background-color: $white;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid $border-gray;
+
+    .fa-circle {
+        color: $icon-bg;
+    }
+}
+
+// Todo
+.todo {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 1em;
+}
+
+// Custom Checkbox
+.checkbox {
+    label {
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+
+            & + .cr > .cr-icon {
+                transform: scale(3) rotateZ(-20deg);
+                opacity: 0;
+                transition: all .3s ease-in;
+            }
+
+            &:checked + .cr {
+                background-color: lighten($green, 35%);
+                border: none;
+
+                &> .cr-icon {
+                    transform: scale(1) rotateZ(0deg);
+                    opacity: 1;
+                }
+            }
+
+            &:checked ~ .todo-text .todo-title {
+                text-decoration: line-through;
+                color: $text-gray;
+            }
+
+            &:disabled + .cr {
+                opacity: .5;
+            }
+        }
+    }
+
+    .cr {
+        transition: background-color 250ms ease-in-out;
+        position: relative;
+        display: inline-block;
+        border: 1px solid darken($border-gray, 25%);
+        border-radius: .25em;
+        width: 1.3em;
+        height: 1.3em;
+        margin-right: 1em;
+        top: -.5em;
+
+        .cr-icon {
+            position: absolute;
+            font-size: .8em;
+            line-height: 0;
+            top: 50%;
+            left: 20%;
+        }
+    }
+
+    .todo-text {
+        display: inline-block;
+        .todo-title {
+            font-weight: bold;
+        }
+        .todo-subtitle {
+            font-size: 0.9em;
+            color: $text-gray;
+        }
+    }
+}
